@@ -1,0 +1,71 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Comic Sans MS;}{\f1\fnil\fcharset0 Consolas;}{\f2\fnil Consolas;}{\f3\fnil\fcharset0 Britannic Bold;}{\f4\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue0;\red0\green0\blue128;\red0\green128\blue128;\red0\green0\blue255;\red0\green77\blue187;\red102\green0\blue153;\red255\green255\blue255;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\box\brdrdash\brdrw0 \cbpat7\sa200\sl276\slmult1\qc\cf1\lang9\ul\b\i\f0\fs40 LAB#04\par
+\pard\box\brdrdash\brdrw0 \cbpat7\sa200\sl276\slmult1\cf2\f1\fs28 QUADRATIC EQUATION:\par
+\cf0\ulnone\i0 INPUT:\par
+\cf2\f2\fs19 import \cf1\b0 cmath\line a=\cf2 int\cf1 (\cf2 input\cf1 (\cf3\b "enter value of a"\cf1\b0 ))\line b=\cf2 int\cf1 (\cf2 input\cf1 (\cf3\b "enter value of b"\cf1\b0 ))\line c=\cf2 int\cf1 (\cf2 input\cf1 (\cf3\b "enter value of c"\cf1\b0 ))\line d=cmath.sqrt(b**\cf4 2\cf1 -\cf4 4\cf1 *a*c)\line\cf2\b if \cf1\b0 (a<\cf4 0\cf1 ):\line     \cf2 print\cf1 (\cf3\b "the equation with the denominator zero cant be solve"\cf1\b0 )\line\cf2\b else\cf1\b0 :\line     s1=(-b+d)/\cf4 2\cf1 *a\line     s2=(-b-d)/\cf4 2\cf1 *a\line     \cf2 print\cf1 (\cf3\b "the solutions for quadratic equation is"\cf1\b0 ,s1,\cf3\b "\cf2\\n\cf3  and "\cf1\b0 ,s2)\par
+\lang1033\f3\fs28 OUTPUT:\lang9\f2\fs19\par
+enter value of a 3\par
+enter value of b4\par
+enter value of c5\par
+the solutions for quadratic equation is (-6+9.9498743710662j) \par
+ and  (-6-9.9498743710662j)\par
+\cf5\lang1033\ul\b\i\f1\fs28 NTH TERM:\cf1\par
+\ulnone\b0\i0\f3 INPUT:\lang9\par
+\f2\fs19 a=\cf2 int\cf1 (\cf2 input\cf1 (\cf3\b "enter first term:"\cf1\b0 ))\line d=\cf2 int\cf1 (\cf2 input\cf1 (\cf3\b "enter common difference:"\cf1\b0 ))\line n=\cf2 int\cf1 (\cf2 input\cf1 (\cf3\b "enter value of n:"\cf1\b0 ))\line tn=a+(n-\cf4 1\cf1 )*d\line\cf2 print\cf1 (\cf3\b "your nth term is"\cf1\b0 ,tn)\line x=\cf3\b "yes"\line\cf2 while\cf1\b0 (x==\cf3\b "yes"\cf1\b0 ):\line     x=\cf2 input\cf1 (\cf3\b "do you want to continue??"\cf1\b0 )\line     \cf2\b if \cf1\b0 x==\cf3\b "yes"\cf1\b0 :\line         n=\cf2 int\cf1 (\cf2 input\cf1 (\cf3\b "enter the value of n"\cf1\b0 ))\line         tn = a + (n - \cf4 1\cf1 ) * d\line         \cf2 print\cf1 (\cf3\b "your nth term is"\cf1\b0 , tn)\line     \cf2\b else\cf1\b0 :\line         \cf2 print\cf1 ()\par
+\lang1033\f3\fs28 OUTPUT:\lang9\line\f2\fs19 enter first term:3\par
+enter common difference:4\par
+enter value of n:5\par
+your nth term is 19\par
+do you want to continue??yes\par
+enter the value of n\lang1033\f1 :\lang9\f2 6\par
+your nth term is 23\par
+do you want to continue??no\par
+\cf5\lang1033\ul\b\i\f1\fs28 PALINDROME:\cf1\lang9\f2\fs19\par
+\lang1033\ulnone\b0\i0\f1\fs28 INPUT\fs19 :\lang9\f2\par
+\pard\box\brdrdash\brdrw0 \cbpat7\sa200\sl276\slmult1 a=(\cf2 input\cf1 (\cf3\b "enter string to check if it is a polindrome or not:"\cf1\b0 ))\line x=a[::-\cf4 1\cf1 ]\line\cf2\b if\cf1\b0 (a==x):\line     \cf2 print\cf1 (a,\cf3\b "string is polindrome"\cf1\b0 )\line\cf2\b else\cf1\b0 :\line     \cf2 print\cf1 (a,\cf3\b "is not polindrome\cf2\\n\cf3 "\cf1\b0 )\par
+\lang1033\b\i\f1\fs28 OUTPUT:\lang9\f2\par
+\pard\box\brdrdash\brdrw0 \cbpat7\sa200\sl276\slmult1\b0\i0\fs19 enter string to check if it is a polindrome or not:maham\par
+maham string is polindrome\par
+\par
+\cf5\lang1033\ul\b\i\f1\fs28 STUDENT MARKSHEET:\par
+\cf1\ulnone INPUT:\lang9\f2\par
+\b0\i0\fs19 name=\cf2 input\cf1 (\cf3\b "student name:"\cf1\b0 )\line fname=\cf2 input\cf1 (\cf3\b "father name:"\cf1\b0 )\line rnum=\cf2 input\cf1 (\cf3\b "roll number:"\cf1\b0 )\line sbjects=\cf2 int\cf1 (\cf2 input\cf1 (\cf3\b "subjects studying:"\cf1\b0 ))\line tmarks=\cf2 int\cf1 (\cf2 input\cf1 (\cf3\b "total marks:"\cf1\b0 ))\line emarks=\cf2 int\cf1 (\cf2 input\cf1 (\cf3\b "enter english obtain marks:"\cf1\b0 ))\line mmarks=\cf2 int\cf1 (\cf2 input\cf1 (\cf3\b "enter maths obtain marks:"\cf1\b0 ))\line plmarks=\cf2 int\cf1 (\cf2 input\cf1 (\cf3\b "enter PL obtain marks:"\cf1\b0 ))\line ismarks=\cf2 int\cf1 (\cf2 input\cf1 (\cf3\b "enter islamiath marks:"\cf1\b0 ))\line ftmarks=\cf2 int\cf1 (\cf2 input\cf1 (\cf3\b "enter FIT marks:"\cf1\b0 ))\line\cf2 print\cf1 (\cf3\b "subject\cf2\\t\\t\cf3  total marks\cf2\\t\cf3  obtain marks\cf2\\t\cf3 %scored"\cf1\b0 )\line x=(emarks/tmarks)*\cf4 100\line\cf1 y=(mmarks/tmarks)*\cf4 100\line\cf1 z=(plmarks/tmarks)*\cf4 100\line\cf1 u=(ismarks/tmarks)*\cf4 100\line\cf1 v=(ftmarks/tmarks)*\cf4 100\line\cf2 print\cf1 (\cf3\b "(i)english\cf2\\t\\t\\t\cf3 "\cf1\b0 ,tmarks,\cf3\b "\cf2\\t\\t\cf3 "\cf1\b0 ,emarks,\cf3\b "\cf2\\t\\t\cf3 "\cf1\b0 ,x)\line\cf2 print\cf1 (\cf3\b "(ii)maths\cf2\\t\\t\\t\cf3 "\cf1\b0 ,tmarks,\cf3\b "\cf2\\t\\t\cf3 "\cf1\b0 ,mmarks,\cf3\b "\cf2\\t\\t\cf3 "\cf1\b0 ,y)\line\cf2 print\cf1 (\cf3\b "(iii)PL\cf2\\t\\t\\t\\t\cf3 "\cf1\b0 ,tmarks,\cf3\b "\cf2\\t\\t\cf3 "\cf1\b0 ,plmarks,\cf3\b "\cf2\\t\\t\cf3 "\cf1\b0 ,z)\line\cf2 print\cf1 (\cf3\b "(iv)islam\cf2\\t\\t\\t\cf3 "\cf1\b0 ,tmarks,\cf3\b "\cf2\\t\\t\cf3 "\cf1\b0 ,ismarks,\cf3\b "\cf2\\t\\t\cf3 "\cf1\b0 ,u)\line\cf2 print\cf1 (\cf3\b "(v)FIT\cf2\\t\\t\\t\\t\cf3 "\cf1\b0 ,tmarks,\cf3\b "\cf2\\t\\t\cf3 "\cf1\b0 ,ftmarks,\cf3\b "\cf2\\t\\t\cf3 "\cf1\b0 ,v)\line total=(x+y+z+u+v)/\cf4 5\line\cf2\b if \cf1\b0 total>\cf4 80 \cf2\b and \cf1\b0 total<\cf4 99\cf1 :\line     \cf2 print\cf1 (name,\cf3\b "your percentage is"\cf1\b0 ,total,\cf3\b "and you have obtain grade A"\cf1\b0 )\line\cf2\b if \cf1\b0 total>\cf4 70 \cf2\b and \cf1\b0 total<=\cf4 79\cf1 :\line     \cf2 print\cf1 (\cf3\b "your percentage is"\cf1\b0 ,total,\cf3\b "and you have obtain grade B"\cf1\b0 )\line\cf2\b if \cf1\b0 total>\cf4 60 \cf2\b and \cf1\b0 total<=\cf4 69\cf1 :\line     \cf2 print\cf1 (\cf3\b "your percentage is"\cf1\b0 ,total,\cf3\b "and you have obtain grade C"\cf1\b0 )\line\cf2\b if \cf1\b0 total>\cf4 50 \cf2\b and \cf1\b0 total<=\cf4 59\cf1 :\line     \cf2 print\cf1 (\cf3\b "your percentage is"\cf1\b0 ,total,\cf3\b "and you have obtain grade D"\cf1\b0 )\par
+\lang1033\b\i\f1\fs28 OUTPUT:\lang9\f2\line\pard\sa200\sl276\slmult1\cf0\b0\i0\f4\fs22 student name:BUSHRA\par
+father name:MUHAMMAD ASIF\par
+roll number:64\par
+subjects studying:5\par
+total marks:50\par
+enter english obtain marks:46\par
+enter maths obtain marks:47\par
+enter PL obtain marks:45\par
+enter islamiath marks:48\par
+enter FIT marks:46\par
+subject\tab\tab  total marks\tab  obtain marks\tab          %scored\par
+(i)english\tab\tab 50 \tab\tab  46 \tab\tab  92.0\par
+(ii)maths\tab\tab  50 \tab\tab  47 \tab\tab  94.0\par
+(iii)PL\tab\tab\tab  50 \tab\tab  45 \tab\tab  90.0\par
+(iv)islam\tab\tab  50 \tab\tab  48 \tab\tab  96.0\par
+(v)FIT\tab\tab\tab  50 \tab\tab  46 \tab\tab  92.0\par
+BUSHRA your percentage is 92.8 and you have obtain grade A\par
+\cf5\ul\b\i\fs28 TABLE IN MATRIX FORM:\par
+\cf0\ulnone INPUT:\par
+\pard\box\brdrdash\brdrw0 \cbpat7\sa200\sl276\slmult1\cf1\b0\i0\f2\fs19 rang1=\cf2 int\cf1 (\cf2 input\cf1 (\cf3\b "enter starting range"\cf1\b0 ))\line rang2=\cf2 int\cf1 (\cf2 input\cf1 (\cf3\b "enter ending range"\cf1\b0 ))\line\cf2\b for \cf1\b0 i \cf2\b in \b0 range\cf1 (\cf4 1\cf1 ,\lang1033\f1 6\lang9\f2 ):\line     \cf2\b for \cf1\b0 j \cf2\b in \b0 range\cf1 (\cf4 1\cf1 ,rang2+\cf4 1\cf1 ):\line         ans=i*j\line         \cf2 print\cf1 (ans,\cf6 end\cf1 =\cf3\b " "\cf1\b0 )\line     \cf2 print\cf1 ()\par
+\line\lang1033\b\i\f1\fs28 OUTPUT:\lang9\f2\par
+\pard\sa200\sl276\slmult1\cf0\b0\i0\f4\fs22 1   2   3   4   5   \par
+2   4    6   8   10\par
+3   6    9    12   15\par
+4   8   12   16   20\par
+5   10   15   20   25\par
+\cf5\ul\b\i\fs28 MATRIX ADDITION:\par
+\cf0\ulnone INPUT:\par
+\cf1\b0\i0\f2\fs19 a=[[\cf4 1\cf1 ,\cf4 2\cf1 ,\cf4 3\cf1 ],[\cf4 3\cf1 ,\cf4 4\cf1 ,\cf4 5\cf1 ],[\cf4 5\cf1 ,\cf4 6\cf1 ,\cf4 7\cf1 ]]\line\pard\box\brdrdash\brdrw0 \cbpat7\sa200\sl276\slmult1 b=[[\cf4 3\cf1 ,\cf4 2\cf1 ,\cf4 1\cf1 ],[\cf4 5\cf1 ,\cf4 6\cf1 ,\cf4 7\cf1 ],[\cf4 8\cf1 ,\cf4 7\cf1 ,\cf4 3\cf1 ]]\line c=[[\cf4 0\cf1 ,\cf4 0\cf1 ,\cf4 0\cf1 ],[\cf4 0\cf1 ,\cf4 0\cf1 ,\cf4 0\cf1 ],[\cf4 0\cf1 ,\cf4 0\cf1 ,\cf4 0\cf1 ]]\line\cf2\b for \cf1\b0 i \cf2\b in \b0 range\cf1 (\cf2 len\cf1 (a)):\line     \cf2\b for \cf1\b0 j \cf2\b in \b0 range\cf1 (\cf2 len\cf1 (a[\cf4 0\cf1 ])):\line         c[i][j]=a[i][j]+b[i][j]\line\cf2 print\cf1 (c)\line\lang1033\f1\par
+\b\i\fs28 OUTPUT:\lang9\f2\line\pard\sa200\sl276\slmult1\cf0\b0\i0\f4\fs22 [[4, 4, 4], [8, 10, 12], [13, 13, 10]]\par
+\par
+\cf5\ul\b\i\fs28 MATRIX MULTIPLICATIONS:\par
+\cf0\ulnone INPUT:\par
+\pard\box\brdrdash\brdrw0 \cbpat7\sa200\sl276\slmult1\cf1\b0\i0\f2\fs19 a=[[\cf4 1\cf1 ,\cf4 3\cf1 ],[\cf4 2\cf1 ,\cf4 4\cf1 ]]\line b=[[\cf4 5\cf1 ,\cf4 7\cf1 ],[\cf4 6\cf1 ,\cf4 8\cf1 ]]\line c=[[\cf4 0\cf1 ,\cf4 0\cf1 ],[\cf4 0\cf1 ,\cf4 0\cf1 ]]\line c[\cf4 0\cf1 ][\cf4 0\cf1 ]=a[\cf4 0\cf1 ][\cf4 0\cf1 ]*b[\cf4 0\cf1 ][\cf4 0\cf1 ]+a[\cf4 0\cf1 ][\cf4 1\cf1 ]*b[\cf4 1\cf1 ][\cf4 0\cf1 ]\line c[\cf4 0\cf1 ][\cf4 1\cf1 ]=a[\cf4 0\cf1 ][\cf4 0\cf1 ]*b[\cf4 0\cf1 ][\cf4 1\cf1 ]+a[\cf4 0\cf1 ][\cf4 1\cf1 ]*b[\cf4 1\cf1 ][\cf4 1\cf1 ]\line c[\cf4 1\cf1 ][\cf4 0\cf1 ]=a[\cf4 1\cf1 ][\cf4 0\cf1 ]*b[\cf4 0\cf1 ][\cf4 0\cf1 ]+a[\cf4 1\cf1 ][\cf4 1\cf1 ]*b[\cf4 1\cf1 ][\cf4 0\cf1 ]\line c[\cf4 1\cf1 ][\cf4 1\cf1 ]=a[\cf4 1\cf1 ][\cf4 0\cf1 ]*b[\cf4 0\cf1 ][\cf4 1\cf1 ]+a[\cf4 1\cf1 ][\cf4 1\cf1 ]*b[\cf4 1\cf1 ][\cf4 1\cf1 ]\line\cf2 print\cf1 (c)\line\par
+\lang1033\b\i\f1\fs28 OUTPUT:\lang9\f2\par
+\pard\sa200\sl276\slmult1\cf0\b0\i0\f4\fs22 [[23, 31], [34, 46]]\par
+}
+ 
